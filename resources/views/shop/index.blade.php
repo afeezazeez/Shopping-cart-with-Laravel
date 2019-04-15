@@ -4,146 +4,30 @@
 Laravel Shopping Cart
 @endsection
 @section('content')
+
+@foreach($products->chunk(3) as $productChunk)
 <div class="row">
+	@foreach($productChunk as  $product)
+
 	<div class="col-sm-6 col-md-4">
 		<div class="thumbnail">
-			<img src="https://brain-images-ssl.cdn.dixons.com/9/4/10180949/u_10180949.jpg" class="image-responsive">
+			<img src="{{$product->imagePath}}" class="image-responsive">
 			<div class="caption">
-				<h3>HP 15-da0503sa 15.6"</h3>
+				<h3>{{$product->title}}</h3>
 				<p class="text-muted">
-					Top features: 
-
-				- Responsive and reliable in everything you do 
-
-				- Sleek and portable wherever you take it 
-
-				- Stay connected and entertained with an extended battery life 
+					{{$product->description}} 
 				</p>
 				<div class="clearfix">
 					<div class="price pull-left">
-						$120.00
+						${{$product->price}}
 					</div>
 						<a href="#" class="btn btn-success pull-right"  role="button">Add to cart</a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="col-sm-6 col-md-4">
-		<div class="thumbnail">
-			<img src="https://brain-images-ssl.cdn.dixons.com/9/4/10180949/u_10180949.jpg" class="image-responsive">
-			<div class="caption">
-				<h3>HP 15-da0503sa 15.6"</h3>
-				<p class="text-muted">
-					Top features: 
-
-				- Responsive and reliable in everything you do 
-
-				- Sleek and portable wherever you take it 
-
-				- Stay connected and entertained with an extended battery life 
-				</p>
-				<div class="clearfix">
-					<div class="price pull-left">
-						$120.00
-					</div>
-						<a href="#" class="btn btn-success pull-right"  role="button">Add to cart</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="col-sm-6 col-md-4">
-		<div class="thumbnail">
-			<img src="https://brain-images-ssl.cdn.dixons.com/9/4/10180949/u_10180949.jpg" class="image-responsive">
-			<div class="caption">
-				<h3>HP 15-da0503sa 15.6"</h3>
-				<p class="text-muted">
-					Top features: 
-
-				- Responsive and reliable in everything you do 
-
-				- Sleek and portable wherever you take it 
-
-				- Stay connected and entertained with an extended battery life 
-				</p>
-				<div class="clearfix">
-					<div class="price pull-left">
-						$120.00
-					</div>
-						<a href="#" class="btn btn-success pull-right"  role="button">Add to cart</a>
-				</div>
-			</div>
-		</div>
-	</div>
+	@endforeach
 </div>
-<div class="row">
-	<div class="col-sm-6 col-md-4">
-		<div class="thumbnail">
-			<img src="https://brain-images-ssl.cdn.dixons.com/9/4/10180949/u_10180949.jpg" class="image-responsive">
-			<div class="caption">
-				<h3>HP 15-da0503sa 15.6"</h3>
-				<p class="text-muted">
-					Top features: 
 
-				- Responsive and reliable in everything you do 
-
-				- Sleek and portable wherever you take it 
-
-				- Stay connected and entertained with an extended battery life 
-				</p>
-				<div class="clearfix">
-					<div class="price pull-left">
-						$120.00
-					</div>
-						<a href="#" class="btn btn-success pull-right"  role="button">Add to cart</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="col-sm-6 col-md-4">
-		<div class="thumbnail">
-			<img src="https://brain-images-ssl.cdn.dixons.com/9/4/10180949/u_10180949.jpg" class="image-responsive">
-			<div class="caption">
-				<h3>HP 15-da0503sa 15.6"</h3>
-				<p class="text-muted">
-					Top features: 
-
-				- Responsive and reliable in everything you do 
-
-				- Sleek and portable wherever you take it 
-
-				- Stay connected and entertained with an extended battery life 
-				</p>
-				<div class="clearfix">
-					<div class="price pull-left">
-						$120.00
-					</div>
-						<a href="#" class="btn btn-success pull-right"  role="button">Add to cart</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="col-sm-6 col-md-4">
-		<div class="thumbnail">
-			<img src="https://brain-images-ssl.cdn.dixons.com/9/4/10180949/u_10180949.jpg" class="image-responsive">
-			<div class="caption">
-				<h3>HP 15-da0503sa 15.6"</h3>
-				<p class="text-muted">
-					Top features: 
-
-				- Responsive and reliable in everything you do 
-
-				- Sleek and portable wherever you take it 
-
-				- Stay connected and entertained with an extended battery life 
-				</p>
-				<div class="clearfix">
-					<div class="price pull-left">
-						$120.00
-					</div>
-						<a href="#" class="btn btn-success pull-right"  role="button">Add to cart</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+@endforeach
 @endsection
