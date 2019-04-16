@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-Sign in
+Profile
 @endsection
 @section('content')
 

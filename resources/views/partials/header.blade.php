@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light header">
-  <a class="navbar-brand" href="#">Chilling Store</a>
+  <a class="navbar-brand" href="/">Chilling Store</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -19,11 +19,15 @@
           User Management
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{{route('user.signup')}}">Sign Up</a>
-          <a class="dropdown-item" href="{{route('user.signin')}}">Sign In</a>
-        
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Logout</a>
+          @if(Auth::check())
+            <a class="dropdown-item" href="{{route('user.profile')}}">User Profile</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="{{route('user.logout')}}">Logout</a>
+          @else
+            <a class="dropdown-item" href="{{route('user.signup')}}">Sign Up</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="{{route('user.signin')}}">Sign In</a>
+          @endif
         </div>
       </li>        
     </ul>
