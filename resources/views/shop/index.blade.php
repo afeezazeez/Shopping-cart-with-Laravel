@@ -21,7 +21,7 @@ Laravel Shopping Cart
 					<div class="price pull-left">
 						${{$product->price}}
 					</div>
-						<a href="#" class="btn btn-success pull-right"  role="button">Add to cart</a>
+						<a href="{{route('product.addToCart', ['id'=> $product->id])}}" class="btn btn-success pull-right"  role="button">Add to cart</a>
 				</div>
 			</div>
 		</div>
