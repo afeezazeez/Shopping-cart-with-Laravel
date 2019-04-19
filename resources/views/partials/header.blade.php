@@ -11,7 +11,9 @@
     <ul class="navbar-nav  navbar-right">
 
      <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fa fa-shopping-cart"> </i> Shopping Cart</a>
+        <a class="nav-link" href="{{route('product.shoppingCart')}}"><i class="fa fa-shopping-cart"> </i> Shopping Cart
+          <span class="badge">{{ Session::has('cart') ? Session::get('cart')->totalQty : ''}}</span>
+        </a>
      </li>
      
         <li class="nav-item dropdown">
