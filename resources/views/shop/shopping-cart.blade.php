@@ -19,9 +19,9 @@ Shopping Cart
             <tbody>
              @foreach($products as $product)
                 <tr>
-                    <td>{{$product['item']['title']}}</td>
-                    <td><b><span class="badge">{{$product['qty']}}</span></b></td>
-                    <td>{{ $product['price']}}</td>
+                    <td><b>{{$product['item']['title']}}</b></td>
+                    <td><b>{{$product['qty']}}</b></td>
+                    <td><b>{{ $product['price']}}</b></td>
                     <td>
                         <button type="button" class="btn btn-danger btn-xs " ><i class="fa fa-remove"> by 1</i></button>
                         <button type="button" class="btn btn-danger btn-xs " ><i class="fa fa-remove"> All</i></button>                            
@@ -32,6 +32,18 @@ Shopping Cart
             </tbody>
             </table>
     </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
+            <strong class="total">Total Price: {{$totalPrice}}</strong> 
+        </div>   
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
+            <a href="{{route('checkout')}}"  class="btn btn-success" style="float:right">Checkout</a> 
+        </div>   
+    </div>
+              
   
     @else
     <div class="row">
@@ -41,17 +53,5 @@ Shopping Cart
         </div>
         
     @endif
-               
-               <div class="row">
-                    <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
-                       <strong class="total">Total Price: {{$totalPrice}}</strong> 
-                    </div>   
-                </div>
-                <hr>
-                <div class="row">
-                        <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
-                           <a href="{{route('checkout')}}"  class="btn btn-success" style="float:right">Checkout</a> 
-                        </div>   
-                </div>
-                
+                 
 @endsection
