@@ -1,0 +1,89 @@
+[33mcommit 1eb218fd10f899285aaa09c4d7381e621a71e8c1[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: chillingRes <aazeez748@stu.ui.edu.ng>
+Date:   Mon May 6 07:12:13 2019 +0100
+
+    forcing user sign in before checkout
+
+[33mcommit 2b1aaa465a7afa258915a5e8a9881b420b14da87[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: chillingRes <aazeez748@stu.ui.edu.ng>
+Date:   Fri May 3 15:28:45 2019 +0100
+
+    storing orders in database
+
+[33mcommit 43defce243da494e5f0af770be3901335032c581[m
+Author: chillingRes <aazeez748@stu.ui.edu.ng>
+Date:   Fri May 3 14:49:29 2019 +0100
+
+    implementing stripe charging a credit card
+
+[33mcommit b5a25beaeba40cdd168dfae818cd1871e95208a4[m
+Author: chillingRes <aazeez748@stu.ui.edu.ng>
+Date:   Fri Apr 19 12:01:40 2019 +0100
+
+    displaying stripe payment view
+
+[33mcommit 44a43fecdd228c231a3623d7d589ed80ce480309[m
+Author: chillingRes <aazeez748@stu.ui.edu.ng>
+Date:   Fri Apr 19 10:28:03 2019 +0100
+
+    displaying products in shopping cart
+
+[33mcommit 268b4b00657c5e05f9b0a5bedaad8922caa16d9d[m
+Author: chillingRes <aazeez748@stu.ui.edu.ng>
+Date:   Thu Apr 18 19:13:01 2019 +0100
+
+    creating the cart model and implementing functionality to store product into the cart using laravel sessions
+
+[33mcommit d7b764d63e04b691e9a109f846fca6524c034f7a[m
+Author: chillingRes <aazeez748@stu.ui.edu.ng>
+Date:   Tue Apr 16 19:41:52 2019 +0100
+
+    redirecting users to homepage after registering and after signing in using authentication middleware
+
+[33mcommit 0fafcfa335a657e5da89d99e6c036648f9c59e02[m
+Author: chillingRes <aazeez748@stu.ui.edu.ng>
+Date:   Tue Apr 16 14:16:03 2019 +0100
+
+    creating sign in page and implementing sign in functionality
+
+[33mcommit 7c8b905b10749aeb2387f4f3548e22539b9e6fd0[m
+Author: chillingRes <aazeez748@stu.ui.edu.ng>
+Date:   Mon Apr 15 20:00:51 2019 +0100
+
+    creating signup page and implementing sign up functionality
+
+[33mcommit de6e8dc0a98992b4c96523057d39b2b4be848a78[m
+Author: chillingRes <aazeez748@stu.ui.edu.ng>
+Date:   Mon Apr 15 18:55:07 2019 +0100
+
+    outputting seeded products in the database o the index page
+
+[33mcommit 7e7e4aa6bbd9ebfe26a7a3e638b3db541d70121f[m
+Author: chillingRes <aazeez748@stu.ui.edu.ng>
+Date:   Mon Apr 15 18:31:42 2019 +0100
+
+    seeding products the database
+
+[33mcommit a0949d03b632b85dcbf6d3737eeda6e4a1203f94[m
+Author: chillingRes <aazeez748@stu.ui.edu.ng>
+Date:   Mon Apr 15 17:51:37 2019 +0100
+
+    displaying dummy products on index page
+
+[33mcommit ff897dec02b77ceca87b5eb61f85f3c286086944[m
+Author: chillingRes <aazeez748@stu.ui.edu.ng>
+Date:   Mon Apr 15 17:11:20 2019 +0100
+
+    setting up view pages and folders and creating index page
+
+[33mcommit 713ae3e7d759e9242e381ed9f71e0f0a57ea5844[m
+Author: chillingRes <aazeez748@stu.ui.edu.ng>
+Date:   Mon Apr 15 16:45:46 2019 +0100
+
+    fresh installation of laravel project
+
+[33mcommit 1ab732a24d4f780535c440951ba3c793f7f0fc11[m
+Author: Azeez Afeez Olaniyi <47336568+chillingRes@users.noreply.github.com>
+Date:   Mon Apr 15 16:34:34 2019 +0100
+
+    Initial commit

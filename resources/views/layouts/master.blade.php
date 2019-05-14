@@ -2,7 +2,6 @@
 <html>
 <head>
 	<title>@yield('title')</title>
-	
 	<link rel="stylesheet" type="text/css" href="{{ URL:: to('css/bootstrap.min.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{ URL:: to('font-awesome-5/css/fontawesome-all.min.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{ URL:: to('font-awesome-4.7/css/font-awesome.min.css')}}">
